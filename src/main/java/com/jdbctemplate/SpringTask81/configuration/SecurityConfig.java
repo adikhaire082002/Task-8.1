@@ -29,7 +29,7 @@ public class SecurityConfig {
     public UserDetailsService userDetailsService() {
         return new InMemoryUserDetailsManager(
                 User.withUsername("aditya")
-                        .password("{noop}aditya123")  // Password without encryption (for testing purposes)
+                        .password("{noop}aditya123")
                         .roles("USER")
                         .build()
         );
